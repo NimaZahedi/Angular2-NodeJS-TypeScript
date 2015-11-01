@@ -1,0 +1,12 @@
+{
+  "name": "USE.Client",
+  "version": "0.1.0",
+  "description": "This is the cilent!",
+  "author": "Nima Zahedi",
+  "license": "MIT",
+  "dependencies": {
+"angular2": "2.0.0-alpha.45",
+    "systemjs": "0.19.5",
+    "d3": "3.5.6"
+  }
+}

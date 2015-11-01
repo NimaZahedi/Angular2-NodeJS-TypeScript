@@ -1,0 +1,28 @@
+{
+  "version": "1.6.2",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "umd",
+    "sourceMap": true,
+    "declaration": false,
+    "noImplicitAny": false,
+    "removeComments": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noLib": false
+  },
+  "filesGlob": [
+    "**/*.ts",
+    "!node_modules/**/*.ts",
+    "!src/node_modules/**/*.ts",
+    "!typings/**/*.d.ts",
+    "typings/tsd.d.ts"
+  ],
+  "files": [
+    "server.ts",
+    "src/client/app/app.ts",
+    "src/server/testModule.ts",
+    "typings/tsd.d.ts"
+  ],
+  "exclude": []
+}
