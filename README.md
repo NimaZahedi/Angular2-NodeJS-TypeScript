@@ -3,7 +3,7 @@ This is the basic structure of project based on NodeJS and Angular2 which are us
 
 ## Usage
 
-1. clone this repository
+1. Clone this repository
 2. Run 
   ```
   npm install
@@ -16,7 +16,7 @@ This is the basic structure of project based on NodeJS and Angular2 which are us
   ```
   npm install
   ```
-5. run in command line
+5. Run in command line
   ```
   node server.js
   ```
