@@ -2,6 +2,9 @@
 This is the basic structure of project based on NodeJS and Angular2 which are using TypeScript.
 
 ## Usage
+
+1.clone this repository
+2.run in command line
 ```
-clone repository and run "node server.js" in command line!
+node server.js
 ```
