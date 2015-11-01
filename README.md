@@ -20,4 +20,8 @@ This is the basic structure of project based on NodeJS and Angular2 which are us
   ```
   node server.js
   ```
+6. Open your browser and go to the
+  ```
+  http://localhost:3000
+  ```
 
