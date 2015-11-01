@@ -4,23 +4,24 @@ This is the basic structure of project based on NodeJS and Angular2 which are us
 ## Usage
 
 1. Clone this repository
-2. Run 
+2. Navigate to the root directory
+3. Run 
   ```
   npm install
   ```
-3. Navigate to src directory
+4. Navigate to src directory
   ```
   cd src/
   ```
-4. Run 
+5. Run 
   ```
   npm install
   ```
-5. Run in command line
+6. Run in command line
   ```
   node server.js
   ```
-6. Open your browser and go to the
+7. Open your browser and go to the
   ```
   http://localhost:3000
   ```
