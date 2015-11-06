@@ -16,5 +16,6 @@ This is the basic structure of project based on NodeJS and Angular2 which are us
 	* atom and sublime: you can install typescript packeage and compile ts to js files on save.
 	* or simply navigate to the root folder of project on terminal and run
 		```tsc -w```
+	so when ever you save any ts files tsc compiles all ts files to js.
 * Run in command line `node server.js`
 * Open your browser and go to the `http://localhost:3000`
