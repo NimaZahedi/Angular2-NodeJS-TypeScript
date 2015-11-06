@@ -1,5 +1,9 @@
 node_modules/
-.tmp
-app/node_modules/
+.vscode
+src/node_modules/
 .DS_Store
-app/modules/common/services/config.js
+src/**/*.js
+src/**/*.js.map
+server.js
+server.js.map
+

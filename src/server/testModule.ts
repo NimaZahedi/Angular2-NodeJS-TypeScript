@@ -7,8 +7,6 @@ export class Test {
 
   public init() {
 
-
-
     this.routes.get('/test', function(req, res) {
       res.send({ message: "This is the new Module!!! :) This Is From Test Module And This Route Also Registered By 'TestModule'!" });
     });

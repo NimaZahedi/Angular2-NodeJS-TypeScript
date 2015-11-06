@@ -12,10 +12,10 @@ export class MyApp {
   constructor(http: Http) {
     this.message = '...';
     http.get("http://localhost:3000/api/test")
-    .subscribe(res =>  {
+      .subscribe(res => {
         var result = res.json();
         this.message = result.message;
-    } );
+      });
   }
 }
 
