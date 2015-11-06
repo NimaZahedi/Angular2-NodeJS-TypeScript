@@ -11,6 +11,7 @@ export class MyApp {
   public message;
   constructor(http: Http) {
     this.message = '...';
+    console.log(1);
     http.get("http://localhost:3000/api/test")
       .subscribe(res => {
         var result = res.json();
@@ -19,4 +20,4 @@ export class MyApp {
   }
 }
 
-bootstrap(MyApp)
+bootstrap(MyApp);
