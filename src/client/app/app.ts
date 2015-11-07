@@ -1,23 +1,29 @@
-import {Component, bootstrap} from "angular2/angular2";
-import {Http, HTTP_PROVIDERS} from "angular2/http";
+import {provide, Component, bootstrap} from "angular2/angular2";
+import {ROUTER_PROVIDERS,
+        Route,
+        HashLocationStrategy,
+        LocationStrategy, 
+        Router, 
+        RouterLink, 
+        RouteConfig, 
+        RouterOutlet} from "angular2/router";
+
+import {Dashboard} from "./components/dashboard/dashboard";
 
 @Component({
   selector: 'my-app',
-  template: '{{message}}',
-  viewProviders: [HTTP_PROVIDERS]
+  templateUrl: "./client/app/home.html",
+  directives: [RouterOutlet, RouterLink]
 })
 
+@RouteConfig([
+  new Route({ path: "/dashboard", component: Dashboard, as: "Dashboard" })
+])
+
 export class MyApp {
-  public message;
-  constructor(http: Http) {
-    this.message = '...';
-    console.log(1);
-    http.get("http://localhost:3000/api/test")
-      .subscribe(res => {
-        var result = res.json();
-        this.message = result.message;
-      });
-  }
 }
 
-bootstrap(MyApp);
+bootstrap(MyApp, [
+    ROUTER_PROVIDERS,
+    provide(LocationStrategy, {useClass: HashLocationStrategy})
+]);

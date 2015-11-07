@@ -1,22 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <title>Angular 2 QuickStart</title>
 
   <script src="node_modules/systemjs/dist/system.js"></script>
-  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-  <script src="node_modules/angular2/bundles/http.js"></script>
 
   <script>
     System.config({
       packages: {
-        '/src/client/app': {
+        '': {
           defaultExtension: 'js'
         }
       }
     });
-    System.import('client/app/app.js');
   </script>
+
+  <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+  <script src="node_modules/angular2/bundles/router.dev.js"></script>
+  <script src="node_modules/angular2/bundles/http.js"></script>
+  <script async>
+    System.import('client/app/app');
+  </script>
+
 </head>
 
 <body>
